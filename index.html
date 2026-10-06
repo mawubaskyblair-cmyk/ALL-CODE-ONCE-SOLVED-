@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Light Switch</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding-top: 50px; }
+    .bulb { width: 100px; height: 100px; background-color: #ccc; border-radius: 50%; margin: 20px auto; transition: background-color 0.3s; }
+    .bulb.on { background-color: #f1c40f; box-shadow: 0 0 20px #f1c40f; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Light Switch Demo</h1>
+  <div id="lightBulb" class="bulb"></div>
+  <button onclick="toggleLight()">Toggle Switch</button>
+
+  <script>
+    function toggleLight() {
+      const bulb = document.getElementById('lightBulb');
+      bulb.classList.toggle('on');
+    }
+  </script>
+</body>
+</html>
